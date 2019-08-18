@@ -1,13 +1,5 @@
 
-def main
-  str = <<'STR'
-aaaaa
-bbbbb
-ccccc
-ddddd
-eeeee
-STR
-
+def main(str)
   result = ""
   str.split("\n").each do |line|
     if line == "bbbbb"
@@ -24,4 +16,12 @@ def add_string(base, string)
   base << "\n"
 end
 
-main
+str = <<'STR'
+aaaaa
+bbbbb
+ccccc
+ddddd
+eeeee
+STR
+
+main str
